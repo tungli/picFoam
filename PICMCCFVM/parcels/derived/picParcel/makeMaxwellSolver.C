@@ -27,6 +27,7 @@ License
 #include "PICCloud.H"
 #include "NoMaxwellSolver.H"
 #include "ElectroStaticSolver.H"
+#include "PoissonBoltzmannSolver.H"
 //#include "ElectroStaticCorrectedSolver.H"
 #include "CellAverage.H"
 #include "VolumeWeighting.H"
@@ -51,6 +52,7 @@ namespace Foam
     //Maxwell solver
     makeMaxwellSolver(CloudType);
     makeMaxwellSolverType(ElectroStaticSolver, CloudType)
+    makeMaxwellSolverType(PoissonBoltzmannSolver, CloudType)
     makeMaxwellSolverType(NoMaxwellSolver, CloudType)
 
 }

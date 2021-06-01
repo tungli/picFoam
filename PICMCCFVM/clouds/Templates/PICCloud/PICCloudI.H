@@ -774,4 +774,10 @@ inline const Foam::scalar& Foam::PICCloud<ParcelType>::warnCellTrajectory() cons
     return warnCellTrajectory_;
 }
 
+template<class ParcelType>
+inline const Foam::PtrList<Foam::volScalarField>& Foam::PICCloud<ParcelType>::rhoChargeSpecies() const
+{
+    return rhoChargeSpecies_;
+}
+
 // ************************************************************************* //

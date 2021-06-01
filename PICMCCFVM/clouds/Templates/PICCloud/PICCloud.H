@@ -472,6 +472,8 @@ public:
                //- Return const reference to the charge density field
                inline const volScalarField& rhoCharge() const;
 
+               inline const PtrList<volScalarField>& rhoChargeSpecies() const;
+
                //- Return const reference to the electric field
                inline const volVectorField& electricField() const;
 
